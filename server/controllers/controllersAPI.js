@@ -30,7 +30,7 @@ module.exports.results = async (req, res) => {
       }
       console.log("Got links");
     })
-    .catch((err) => res.send({ message: "Error in fetching data" }));
+   .catch((err) => console.log({ message: "Error in fetching data" }));
   // --------------------------------------------------------------- API for summary----------------------------------
   await Promise.all(
     linksArray.map(async (url) => {
